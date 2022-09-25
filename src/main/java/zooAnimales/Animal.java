@@ -74,6 +74,9 @@ public class Animal {
     			"Peces: " + Pez.getListado() +"\n" +
     			"Anfibios: " + Anfibio.getListado();		
     }
+    public String movimiento() {
+    	return "desplazarse";
+    }
     @Override
     public String toString() {
     	if(zona != null) {

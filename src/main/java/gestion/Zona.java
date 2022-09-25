@@ -42,7 +42,7 @@ public class Zona {
 	public void setAnimales(ArrayList<Animal> animales) {
 		this.animales = animales;
 	}
-	public void agregarAnimal(Animal animales) {
+	public void agregarAnimales(Animal animales) {
         this.animales.add(animales);
     }
 	public int cantidadAnimales() {

@@ -63,6 +63,9 @@ public class Pez extends Animal{
     public void setCantidadAletas(int cantidadAletas) {
         this.cantidadAletas = cantidadAletas;
     }
+    public String movimiento() {
+    	return "nadar";
+    }
 
     
 }

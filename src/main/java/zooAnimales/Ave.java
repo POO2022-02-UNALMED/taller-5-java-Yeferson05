@@ -52,6 +52,9 @@ public class Ave extends Animal {
     public void setColorPlumas(String colorPlumas) {
         this.colorPlumas = colorPlumas;
     }
+    public String movimiento() {
+    	return "volar";
+    }
 
 
     

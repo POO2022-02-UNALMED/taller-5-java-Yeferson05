@@ -61,6 +61,9 @@ public class Reptil extends Animal{
 	public void setLargoCola(int largoCola) {
 		this.largoCola = largoCola;
 	}
+	public String movimiento() {
+    	return "reptar";
+    }
     
 
     
