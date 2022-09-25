@@ -20,13 +20,13 @@ public class Reptil extends Animal{
         this.largoCola = largoCola;
     }
 
-    public Reptil crearIguana (String nombre, int edad, String genero) {
+    public static Reptil crearIguana (String nombre, int edad, String genero) {
     	iguanas++;
         Reptil iguana = new Reptil(nombre, edad, "humedal", genero, "verde", 3);
         listado.add(iguana);
         return iguana;
     }
-    public Reptil crearSerpiente (String nombre, int edad, String genero) {
+    public static Reptil crearSerpiente (String nombre, int edad, String genero) {
     	serpientes++;
         Reptil serpiente = new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
         listado.add(serpiente);

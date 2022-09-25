@@ -22,14 +22,14 @@ public class Pez extends Animal{
         this(null, 0, null, null, null, 0);
     }   
     
-    public Pez crearSalmon(String nombre, int edad, String genero) {
+    public static Pez crearSalmon(String nombre, int edad, String genero) {
         salmones++;
         Pez salmon = new Pez(nombre, edad, "oceano", genero, "rojo", 6);
         listado.add(salmon);
         return salmon;
     }
 
-    public Pez crearBacalao(String nombre, int edad, String genero) {
+    public static Pez crearBacalao(String nombre, int edad, String genero) {
         bacalaos++;
         Pez bacalao = new Pez(nombre, edad, "oceano", genero, "gris", 6);
         listado.add(bacalao);

@@ -20,14 +20,14 @@ public class Anfibio extends Animal{
         this.venenoso = venenoso;
     }
 
-    public Anfibio crearRana(String nombre, int edad, String genero) {
+    public static Anfibio crearRana(String nombre, int edad, String genero) {
     	ranas++;
     	Anfibio rana = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
     	listado.add(rana);
     	return rana;
     }
 
-    public Anfibio crearSalamandra (String nombre, int edad, String genero) {
+    public static Anfibio crearSalamandra (String nombre, int edad, String genero) {
     	salamandras++;
     	Anfibio salamandra = new Anfibio(nombre, edad, "selva", genero, "negro", false);
     	listado.add(salamandra);
