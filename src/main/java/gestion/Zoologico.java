@@ -14,8 +14,8 @@ public class Zoologico {
         this.nombre = nombre;
         this.ubicacion = ubicacion;
     }
-    public void agregarZonas(Zona zonas) {
-        this.zonas.add(zonas);
+    public void agregarZonas(Zona zona) {
+    	zonas.add(zona);
     }
 	
 	public int cantidadTotalAnimales() {
