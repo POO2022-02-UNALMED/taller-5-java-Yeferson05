@@ -5,8 +5,8 @@ import gestion.Zona;
 
 public class Pez extends Animal{
     private static ArrayList<Pez> listado;
-    public static int salmones;
-    public static int bacalaos;
+    public static int salmones=0;
+    public static int bacalaos=0;
     private String colorEscamas;
     private int cantidadAletas;
     public Pez() {
