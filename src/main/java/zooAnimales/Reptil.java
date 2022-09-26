@@ -11,7 +11,7 @@ public class Reptil extends Animal{
     public static int totalReptil;
 
     public Reptil() {
-
+    	this(null,0,null,null,null,0);
     }  
     
     public Reptil(String nombre, int edad, String habitat, String genero,

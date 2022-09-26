@@ -10,6 +10,7 @@ public class Mamifero extends Animal {
     private int patas;
     public static int totalMamifero;
     public Mamifero() {
+    	this(null,0,null,null,false,0);
 
     }  
     
@@ -38,7 +39,7 @@ public class Mamifero extends Animal {
         return leon;
     }
     public int cantidadMamifero() {
-        return listado.size(); 
+        return totalMamifero; 
     }
 
 	public static ArrayList<Mamifero> getListado() {

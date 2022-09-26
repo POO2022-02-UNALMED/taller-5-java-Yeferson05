@@ -11,6 +11,7 @@ public class Animal {
     private Zona zona;
    
     public Animal() {
+    	this(null,0,null,null);
     }   
 
     public Animal(String nombre, int edad, String habitat, String genero) {
@@ -68,25 +69,31 @@ public class Animal {
         Animal.totalAnimales = totalAnimales;
     }
     public static String totalPorTipo() {
-    	return "Mamiferos: " + Mamifero.totalMamifero +"\n" +
-    			"Aves: " + Ave.totalAve +"\n" +
-    			"Reptiles: " + Reptil.totalReptil +"\n" +
-    			"Peces: " + Pez.totalPez +"\n" +
+    	return "Mamiferos: " + Mamifero.totalMamifero + "\n" +
+    			"Aves: " + Ave.totalAve + "\n" +
+    			"Reptiles: " + Reptil.totalReptil+ "\n" +
+    			"Peces: " + Pez.totalPez + "\n" +
     			"Anfibios: " + Anfibio.totalAnfibio;		
     }
     public String movimiento() {
     	return "desplazarse";
     }
     @Override
-    public String toString() {
-    	if(zona != null) {
-    		return "Mi nombre es" + nombre + ", tengo una edad de" + edad + 
-    				", habito en" + habitat + "y mi genero es" + genero + 
-    				", la zona en la que me ubico es" + zona.getNombre() + ", en el" + zona.getZoo().getNombre();
-    	}
-    	else{
-    		return "Mi nombre es"+ nombre + ", tengo una edad de"+ edad + ", habito en"+ habitat + "y mi genero es"+ genero;
-    	}
+    public String toString(){
+        if (this.zona==null){
+            return "Mi nombre es "+ getNombre()+
+                    ", tengo una edad de "+getEdad()+
+                    ", habito en " +getHabitat()+
+                    " y mi genero es " +getGenero();
+        }
+        else{
+            return "Mi nombre es "+getNombre()+
+                        ", tengo una edad de "+getEdad()+
+                        ", habito en " +getHabitat()+
+                        " y mi genero es " +getGenero()+
+                        ", la zona en la que me ubico es "+zona.getNombre()+
+                        ", en el "+zona.getZoo().getNombre();
+        }
     }
     
 }
