@@ -8,7 +8,6 @@ public class Reptil extends Animal{
     public static int serpientes;
     private String colorEscamas;
     private int largoCola;
-    public static int totalReptil;
 
     public Reptil() {
     	this(null,0,null,null,null,0);
@@ -23,21 +22,19 @@ public class Reptil extends Animal{
 
     public static Reptil crearIguana (String nombre, int edad, String genero) {
     	iguanas++;
-    	totalReptil++;
         Reptil iguana = new Reptil(nombre, edad, "humedal", genero, "verde", 3);
         listado.add(iguana);
         return iguana;
     }
     public static Reptil crearSerpiente (String nombre, int edad, String genero) {
     	serpientes++;
-    	totalReptil++;
         Reptil serpiente = new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
         listado.add(serpiente);
         return serpiente;
     }
     
     public static int cantidadReptiles() {
-        return totalReptil; 
+        return serpientes+iguanas; 
     }
     
 
