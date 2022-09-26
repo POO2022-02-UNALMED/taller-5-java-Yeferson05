@@ -9,15 +9,15 @@ public class Zona {
     private Zoologico zoo;
     private ArrayList<Animal> animales;
     
+    public Zona() {
+    	this(null, null);
+    }
+    
     public Zona(String nombre, Zoologico zoo) {
         this.nombre = nombre;
         this.zoo = zoo;
     }
 
-    public Zona() {
-    	this(null, null);
-
-    }
     public void agregarAnimales(Animal animales1) {
         this.animales.add(animales1);
     }
