@@ -69,11 +69,11 @@ public class Animal {
         Animal.totalAnimales = totalAnimales;
     }
     public static String totalPorTipo() {
-    	return "Mamiferos: " + Mamifero.totalMamifero + "\n" +
-    			"Aves: " + Ave.totalAve + "\n" +
-    			"Reptiles: " + Reptil.totalReptil+ "\n" +
-    			"Peces: " + Pez.totalPez + "\n" +
-    			"Anfibios: " + Anfibio.totalAnfibio;		
+    	return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" +
+    			"Aves: " + Ave.cantidadAves() + "\n" +
+    			"Reptiles: " + Reptil.cantidadReptiles()+ "\n" +
+    			"Peces: " + Pez.cantidadPeces() + "\n" +
+    			"Anfibios: " + Anfibio.cantidadAnfibios();		
     }
     public String movimiento() {
     	return "desplazarse";
